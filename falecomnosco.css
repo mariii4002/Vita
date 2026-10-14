@@ -1,0 +1,42 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+#Maa{
+    width:100%;
+    height:100% ;
+}
+h1{
+    font-family: serif;
+}
+#LO{
+    width: 100%;
+    height: 100%;
+}
+#vei{
+    width: 100%;
+    height: 100%;
+}
+
+.juju{
+   
+    align-items: center;
+    justify-content: center;
+    background-image: url(./imagens/aaa.avif);
+    background-position: center;
+    background-size: cover;
+}
+#mano{
+    margin: 170px;
+    width:100px;
+    height: 100px;
+}
+p{
+ height: 50px;
+ text-align: center;
+    background-color: black;
+    color: antiquewhite;
+}
