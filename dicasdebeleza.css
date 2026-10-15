@@ -1,56 +1,263 @@
-*{
-margin: 0%;
-padding: 0%;
-box-sizing: border-box;
-font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+.banner-principal {
+  display: flex;
+  width: 100%;
+  height: 350px;
+  background-color: #f3e5e5; 
 }
 
+.banner-texto {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding: 0 50px;
+}
+
+.banner-texto h1 {
+  font-size: 32px;
+  color: #444;
+  line-height: 1.3;
+}
+
+.banner-imagem {
+  flex: 1;
+  height: 100%;
+}
+
+.banner-imagem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+
+.secao-categorias {
+  background-color: #f4f4f4;
+  padding: 20px 40px 40px 40px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.breadcrumb {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.breadcrumb a {
+  color: #444;
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb span {
+  color: #888;
+}
+
+.categorias-grid {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.categoria-item {
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+  width: 140px;
+  transition: transform 0.2s;
+}
+
+.categoria-item:hover {
+  transform: translateY(-3px);
+}
+
+.categoria-icone {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.categoria-item span {
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  display: block;
+  line-height: 1.4;
+}
+
+.secao-rotina {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.secao-rotina h2 {
+  font-size: 28px;
+  color: #222;
+  margin-bottom: 5px;
+}
+
+.secao-rotina h3 {
+  font-size: 14px;
+  color: #555;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 15px;
+}
+
+.subtitulo-passos {
+  font-size: 15px;
+  color: #444;
+  margin-bottom: 30px;
+}
+
+.lista-passos {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+.cartao-passo {
+  display: flex;
+  background-color: #f7f7f7; 
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+
+.passo-imagem {
+  width: 220px;
+  min-width: 220px;
+  height: 150px;
+}
+
+.passo-imagem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.passo-conteudo {
+  padding: 20px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.passo-conteudo h4 {
+  font-size: 18px;
+  color: #222;
+  margin-bottom: 8px;
+}
+
+.passo-conteudo p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+}
 
 body {
-  background-color: #f9f9f9;
+  background-color: #c0b5b5; 
   color: #333;
- line-height: 1.6;
-}
-
-header{
-background-color: #000;
-color: #fff;
-padding: 20px 40px;
-display: flex;
-justify-content: space-between;
-align-items: center;
-
-
-.logo {
-font-size: 24px;
-font-weight: bold;
-letter-spacing: 2px;
-text-transform: uppercase;
-
-}
-
-nav ul {
-display: flex;
-list-style: none;
-gap: 25px;
-
+  line-height: 1.6;
 }
 
 
-nav ul {
-display: flex;
-list-style: none;
-gap: 25px;
 
-
-
-nav ul li a {
-
-
-
-
-
-  
+.secao-produtos-recomendados {
+  background-color: #ffffff; 
+  border-top: 1px solid #e0e0e0; 
+  padding: 60px 20px; 
+  margin-top: 60px; 
+  width: 100%;
 }
 
+.texto-introducao-produtos {
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.secao-produtos-recomendados h2 {
+  font-size: 32px;
+  color: #111;
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+
+.grade-produtos {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.cartao-produto {
+  flex: 1;
+  min-width: 240px;
+  max-width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.imagem-produto {
+  width: 100%;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.imagem-produto img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.cartao-produto h3 {
+  font-size: 18px;
+  color: #0d2a4a; 
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.cartao-produto p {
+  font-size: 13px;
+  color: #666;
+  line-height: 1.5;
+}
+
+.container-botao {
+  margin-top: 20px;
+}
+
+.btn-ver-todos {
+  display: inline-block;
+  padding: 12px 30px;
+  border: 1px solid #0d2a4a;
+  color: #0d2a4a;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.btn-ver-todos:hover {
+  background-color: #0d2a4a;
+  color: #fff;
 }
